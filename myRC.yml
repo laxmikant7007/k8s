@@ -15,6 +15,6 @@ spec:
       spec:
           containers:
           - name: mynginx-container
-            image: nginx
+            image: laxmikant7007/myjavapp7007
             ports:
-            - containerPort: 80
+            - containerPort: 8081
