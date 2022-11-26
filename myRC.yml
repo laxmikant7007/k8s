@@ -5,16 +5,16 @@ metadata:
 spec: 
     replicas: 5
     selector:
-        app: mynginx
+        app: mycgjavapp
         version: 2.6.2
     template:
       metadata:
         labels:
-          app: mynginx
+          app: mycgjavapp
           version: 2.6.2
       spec:
           containers:
           - name: mynginx-container
-            image: laxmikant7007/mycgjava:1
+            image: laxmikant7007/mycgjavapp:1
             ports:
             - containerPort: 8081
