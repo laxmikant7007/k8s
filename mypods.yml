@@ -4,7 +4,7 @@ metadata:
     name: hello-pod
 spec:
  containers:
-   - name: first-container
-     image: nginx
+   - name: mycgjavapp-container
+     image: laxmikant7007/mycgjavapp:1
      ports:
-        - containerPort: 80
+        - containerPort: 8080
