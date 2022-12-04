@@ -3,18 +3,18 @@ kind: ReplicationController
 metadata:
     name: vertex-rc
 spec: 
-    replicas: 5
+    replicas: 3
     selector:
-        app: mycgjavapp
-        version: 2.6.2
+        app: myvertexapp
+        version: 2.6.1
     template:
       metadata:
         labels:
-          app: mycgjavapp
-          version: 2.6.2
+          app: myvertexapp
+          version: 2.6.1
       spec:
           containers:
-          - name: mycgjavapp-container
-            image: laxmikant7007/mycgjavapp:1
+          - name: myvertexapp-container
+            image: laxmikant7007/myjavaimage4dec22:1
             ports:
             - containerPort: 8080
